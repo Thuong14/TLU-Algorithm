@@ -1,5 +1,15 @@
 # Easy Problems - Code mẫu và giải thích
 
+### 13. Roman to Integer
+**Tóm tắt đề:** Nhập một số La mã, chuyển đổi số đó sáng hệ thập phân. Biết các chữ số la mã có giá trị tương ứng như sau:
+                                    I             1
+                                    V             5
+                                    X             10
+                                    L             50
+                                    C             100
+                                    D             500
+                                    M             1000
+
 ### [20. Valid Parentheses](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/20_ValidParentheses.cpp)
 **Tóm tắt đề:** Cho một dãy ngoặc, kiểm tra xem dãy ngoặc đó có hợp lí không. Dãy ngoặc hợp lí là tất cả ngoặc mở phải có ngoặc đóng, ngoặc đóng và ngoặc mở của một cặp phải cùng một khối.  
 
