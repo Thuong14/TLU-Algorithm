@@ -1,14 +1,22 @@
 # Easy Problems - Code mẫu và giải thích
 
 ### [13. Roman to Integer](https://github.com/Thuong14/TLU-Algorithm/blob/main/Leetcode/Easy/Code/13_RomanToInteger.cpp)
-**Tóm tắt đề:** Nhập một số La mã, chuyển đổi số đó sáng hệ thập phân. Biết các chữ số la mã có giá trị tương ứng như sau:
-* I             1
-* V             5
-* X             10
-* L             50
-* C             100
-* D             500
-* M             1000
+**Tóm tắt đề:** Nhập một số La Mã dưới dạng chuỗi(string), chuyển đổi số đó thành số nguyên(int). Biết các chữ số La Mã có giá trị tương ứng như sau:<br>
+|Roman|I|V|X|L|C|D|M|
+|-|-|-|-|-|-|-|-|
+|Integer|1|5|10|50|100|500|1000
+
+**Hướng dẫn giải:**
+- Đầu tiên ra cần có một hàm chuyển đổi từng chữ số La Mã sang số nguyên
+  - `if` I `reuturn` 1
+  - `if` V `reuturn` 5
+  - .................
+- Thông thường số La Mã sẽ được đọc từ trái -> phải
+- Khởi tạo một biến `answer` ban đầu bằng 0 để lưu giá trị
+- Duyệt qua từng kí tự trong chuỗi số La Mã:
+  - Nếu giá trị nguyên tương ứng(GTNTU) của kì tự đứng trước lớn hơn hoặc GTNTU của kí tự đứng sau thì cộng GTNTU của kí tự trước vào biến `answer`
+  - Nếu giá trị nguyên tương ứng(GTNTU) của kì tự đứng trước nhỏ hơn chữ số đứng sau thì cộng (GTNTU của kí tự sau trừ GTNTU của kí tự trước) vào biến `answer`(lưu ý trường hợp này đã duyệt qua 2 kí tự, cần phải tăng chỉ số duyệt thêm 1)
+- Trả về biến `answer` là số nguyên sau khi chuyển đổi
 
 ### [20. Valid Parentheses](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/20_ValidParentheses.cpp)
 **Tóm tắt đề:** Cho một dãy ngoặc, kiểm tra xem dãy ngoặc đó có hợp lí không. Dãy ngoặc hợp lí là tất cả ngoặc mở phải có ngoặc đóng, ngoặc đóng và ngoặc mở của một cặp phải cùng một khối.  
